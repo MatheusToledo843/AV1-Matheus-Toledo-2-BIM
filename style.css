@@ -2,20 +2,36 @@
         scroll-behavior: smooth;
     }
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #0a0e27;
+        color: #333;
     }
     header {
-        background-color: #333;
+        background-image: url('Marvel.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: #1a1a2e;
         color: white;
-        padding: 20px;
+        padding: 40px 20px;
         text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+    header h1 {
+        font-size: 2.5em;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        color: #FFB81C;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
     nav {
-        background-color: #444;
+        background-color: #E23636;
         display: flex;
         justify-content: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
     nav a {
         display: block;
@@ -23,10 +39,13 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
     }
     nav a:hover {
-        background-color: #fff;
-        color: black;
+        background-color: #FFB81C;
+        color: #E23636;
+        transform: scale(1.05);
     }  
     main {
         padding: 20px;
@@ -34,10 +53,63 @@
         margin: 0 auto;
     }
     section {
-        border: 2px solid black;
+        border: 3px solid #E23636;
         margin: 20px 0;
-        padding: 15px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(226, 54, 54, 0.2);
+        border-radius: 5px;
+    }
+    section h2 {
+        color: #E23636;
+        border-bottom: 2px solid #FFB81C;
+        padding-bottom: 10px;
+        font-size: 1.5em;
+    }
+    section h3 {
+        color: #333;
+        margin-top: 15px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    form label {
+        font-weight: bold;
+        color: #333;
+        margin-top: 10px;
+    }
+    form input[type="text"],
+    form input[type="email"] {
+        padding: 10px;
+        margin: 8px 0;
+        border: 2px solid #E23636;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+    form input[type="submit"] {
+        padding: 10px;
+        margin-top: 15px;
+        background-color: #E23636;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    form input[type="submit"]:hover {
+        background-color: #FFB81C;
+        color: #E23636;
+    }
+    footer {
+        background-color: #1a1a2e;
+        color: #FFB81C;
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
     }
     footer p {
-        text-align: center;
+        margin: 0;
+        font-weight: bold;
     }
